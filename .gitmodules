@@ -1,0 +1,3 @@
+[submodule "external/moses"]
+	path = external/moses
+	url = https://github.com/molecularsets/moses.git
