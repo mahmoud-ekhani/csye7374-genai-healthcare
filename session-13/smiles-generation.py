@@ -35,8 +35,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 from rdkit import Chem
-from rdkit.Chem import AllChem, Descriptors, QED, Lipinski, rdMolDescriptors
-from rdkit.Chem.Scaffolds import MurckoScaffold
+from rdkit.Chem import AllChem, Draw, Descriptors, QED
+from rdkit.Chem.Draw import IPythonConsole
+from rdkit.Chem.Scaffolds.MurckoScaffold import GetScaffoldForMol
+from rdkit.Chem import rdDecomposition, rdMolDescriptors, rdDistGeom
+from rdkit.Chem.MolStandardize import rdMolStandardize
 
 import torch
 from torch.utils.data import Dataset, DataLoader
